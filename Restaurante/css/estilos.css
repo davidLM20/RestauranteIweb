@@ -430,7 +430,21 @@ body{
     margin-bottom: 3vh;
 }
 
-.tablecud td{
-    width: 4vw;
-    height: 2vh;
+.tablecud {
+	width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+}
+tr:hover{
+	background: #ccc;
+	color: #000;
 }
