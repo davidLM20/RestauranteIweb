@@ -61,11 +61,13 @@ body{
     text-decoration: none;
     color: #E0DCDC;
     margin-right: 1vw;
+    cursor: pointer;
 }
 .btnLogin{
     text-decoration: none;
     color: #E0DCDC;
     margin-left: 1vw;
+    cursor: pointer;
 }
 .Usuario{
     display: flex;
@@ -231,6 +233,7 @@ body{
     height: 5vh;
     margin-top: 2vh;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /*Administrador*/

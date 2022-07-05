@@ -59,7 +59,7 @@
                 </div>
                 <div class="grupoInput">
                     <select style="visibility:hidden" id="tipoUser" name="tipoUser" >
-                        <option value="1">Visitante</option>
+                        <option value="2">Visitante</option>
                     </select>
                 </div>
                 <div class="grupoInput">
