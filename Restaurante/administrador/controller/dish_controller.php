@@ -7,7 +7,7 @@ class dish_controller{
 	var $Servidor;
 
 
-	function user_controller($host="", $user="", $pass="", $db=""){
+	function dish_controller($host="", $user="", $pass="", $db=""){
 		$this->BaseDatos=$db;
 		$this->Servidor=$host;
 		$this->Usuario=$user;
@@ -20,11 +20,11 @@ class dish_controller{
 
         if (isset($_POST['nombrePlato'])) {
 	        $dish->setNombrePlato($_POST['nombrePlato']);
-	        $dish->setDescripcion($_POST['description']);
+	        $dish->setDescripcion($_POST['descripcion']);
         	$dishResponse = $dish->CreateDish();
 	        if ($dishResponse == 1) // exitoso
 	        {
-	            echo "<script>location.href='dish.php'</script>";
+	            echo "<script>location.href='dishes.php'</script>";
 	        } else {
 	            echo "<h1>Error al crear dish.</h1>";
 	        }
@@ -42,15 +42,16 @@ class dish_controller{
         $dishResponse = $dish->getDish($id);
 		return $dishResponse;
 	}
+	
     public function DeleteDish()
 	{
 		$dish = new DishModel();
-		if(isset($_GET['idDish'])){
+		if(isset($_GET['id'])){
 			
-			$dishResponse = $dish->DeleteDish($_GET['idDish']);	
+			$dishResponse = $dish->DeleteDish($_GET['id']);	
 	        if ($dishResponse == 1) // exitoso
 	        {
-	            echo "<script>location.href='dish.php'</script>";
+	            echo "<script>location.href='dishes.php'</script>";
 	        } else {
 	            echo "<h1>Error al eliminar usuario.</h1>";
 	        }
@@ -67,7 +68,7 @@ class dish_controller{
         	$dishResponse = $dish->updateDish($idDish);
 	        if ($dishResponse == 1) // exitoso
 	        {
-	            echo "<script>location.href='../views/dish.php'</script>";
+	            echo "<script>location.href='../views/dishes.php'</script>";
 	        } else {
 	            echo "<h1>Error al crear dish.</h1>";
 	        }

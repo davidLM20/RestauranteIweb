@@ -1,9 +1,9 @@
 <?php
-    extract($_POST);
     include("../controller/user_controller.php");
     $control= new user_controller();
+    extract($_POST);
     if(isset($_POST['id'])){
         $idUser = $_POST['id'];
-        $control->updateUser($idUser);
-    }    
+        $control -> DeleteUser($idUser);
+    }
 ?>

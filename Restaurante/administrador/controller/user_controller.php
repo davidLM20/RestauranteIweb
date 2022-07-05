@@ -47,9 +47,9 @@ class user_controller{
 	public function DeleteUser()
 	{
 		$user = new UserModel();
-		if(isset($_GET['idUser'])){
+		if(isset($_GET['id'])){
 			
-			$userResponse = $user->DeleteUser($_GET['idUser']);	
+			$userResponse = $user->DeleteUser($_GET['id']);	
 	        if ($userResponse == 1) // exitoso
 	        {
 	            echo "<script>location.href='user.php'</script>";
@@ -67,7 +67,6 @@ class user_controller{
 	        $user->setNombres($_POST['nombres']);
 	        $user->setApellidos($_POST['apellidos']);
 	        $user->setCorreo($_POST['correo']);
-			$user->setClave($_POST['clave']);
 			$user->setTipoUser($_POST['tipoUser']);
         	$userResponse = $user->updateUser($idUser);
 	        if ($userResponse == 1) // exitoso

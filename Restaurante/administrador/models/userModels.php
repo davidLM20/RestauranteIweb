@@ -69,7 +69,7 @@ class UserModel
   public function UpdateUser($id){
     $miconexion = new clase_mysqli;
     $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
-    $resSQL=$miconexion->consulta("update usuarios set nombres='$this->nombres', apellidos='$this->apellidos', correo='$this->correo', clave='$this->clave', tipoUser='$this->tipoUser' where id= $id");
+    $resSQL=$miconexion->consulta("update usuarios set nombres='$this->nombres', apellidos='$this->apellidos', correo='$this->correo', tipoUser='$this->tipoUser' where id= $id");
     return $resSQL;
   }
 

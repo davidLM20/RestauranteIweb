@@ -29,10 +29,6 @@
                     <input class="frmInput" type="email" name="correo" id="correo" value="<?php echo $listaUser[3]; ?>">
                 </div>
                 <div class="grupoInput">
-                    <label for="clave" class="labelStyle">Clave</label>
-                    <input class="frmInput" type="password" name="clave" id="clave" value="<?php echo $listaUser[4]; ?>">
-                </div>
-                <div class="grupoInput">
                     <label for="tipoUser" class="labelStyle">Tipo de usuario</label>
                     <select class="frmInput" id="tipoUser" name="tipoUser">
                         <option value="<?php echo $listaUser[5]; ?>"><?php echo $listaRol[$listaUser[5]]; ?></option>

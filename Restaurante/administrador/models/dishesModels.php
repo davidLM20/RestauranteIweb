@@ -44,14 +44,14 @@ class DishModel
         return $listaDish;
     }
 
-    public function DeleteUser($id){
+    public function DeleteDish($id){
         $miconexion = new clase_mysqli;
         $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
         $resSQL=$miconexion->consulta("delete from platos where platos.id = '$id'");
         return $resSQL;   
     }
 
-    public function UpdateUser($id){
+    public function UpdateDish($id){
         $miconexion = new clase_mysqli;
         $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
         $resSQL=$miconexion->consulta("update platos set nombrePlato='$this->nombrePlato', descripcion='$this->descripcion' where id= $id");
