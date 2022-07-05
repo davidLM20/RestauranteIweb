@@ -76,7 +76,7 @@ class clase_mysqli{
 		echo "</table>";
 	}
 
-	function verconsultacrud(){
+	function verconsultacrud($rootDelete,$rootUpdate){
 		echo "<table class='tablecud'>";
 		echo "<tr>";
 		for ($i=0; $i < $this->numcampos() ; $i++) { 
@@ -92,8 +92,8 @@ class clase_mysqli{
 				//echo "<td>".utf8_encode($row[$i])."</td>";
 				echo "<td>".$row[$i]."</td>";
 			}
-			echo  "<td><a href='../views/deleteUser.php?idUser=$row[0]'>Borrar</a></td>";
-			echo  "<td><a href='../views/updateUser.php?idUser=$row[0]'>Actualizar</a></td>";
+			echo  "<td><a href='$rootDelete?id=$row[0]'>Borrar</a></td>";
+			echo  "<td><a href='$rootUpdate?id=$row[0]'>Actualizar</a></td>";
 			echo "</tr>";
 		}
 		echo "</table>";

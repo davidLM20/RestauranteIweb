@@ -34,57 +34,8 @@ include("header.php");
                 </article>
 
             </section>
-            <h2>Platos Disponibles</h2>
-            <div class="platoNuevo" >
-                <button class="btnAgragar">Agregar nuevo Plato </button>
-                <i class="fa-regular fa-plus fa-lg"></i>
-            </div>
+           
             
-            <section class="contDash">
-                <article class="menuPlato">
-                    <img src="../images/Rectangle_3.png" alt="">
-                    <h3>Pizza Italiana</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, mauris vestibulum nunc ut. Eget fusce
-                        sit tortor volutpat, felis .
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, mauris vestibulum nunc ut. Eget fusce
-                        sit tortor volutpat, felis .
-                    </p>
-                </article>
-
-                <article class="menuPlato">
-                    <img src="../images/Group_4.png" alt="">
-                    <h3>Pizza Italiana</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, mauris vestibulum nunc ut. Eget fusce
-                        sit tortor volutpat, felis .</p>
-                </article>
-                <article class="menuPlato">
-                    <img src="../images/Group_6.png" alt="">
-                    <h3>Pizza Italiana</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, mauris vestibulum nunc ut. Eget fusce
-                        sit tortor volutpat, felis .</p>
-                </article><article class="menuPlato">
-                    <img src="../images/Rectangle_3.png" alt="">
-                    <h3>Pizza Italiana</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, mauris vestibulum nunc ut. Eget fusce
-                        sit tortor volutpat, felis .
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, mauris vestibulum nunc ut. Eget fusce
-                        sit tortor volutpat, felis .
-                    </p>
-                </article>
-
-                <article class="menuPlato">
-                    <img src="../images/Group_4.png" alt="">
-                    <h3>Pizza Italiana</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, mauris vestibulum nunc ut. Eget fusce
-                        sit tortor volutpat, felis .</p>
-                </article>
-                <article class="menuPlato">
-                    <img src="../images/Group_6.png" alt="">
-                    <h3>Pizza Italiana</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, mauris vestibulum nunc ut. Eget fusce
-                        sit tortor volutpat, felis .</p>
-                </article>
-            </section>
             
             <h2>Nomina</h2>
             <div class="platoNuevo">

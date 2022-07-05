@@ -8,14 +8,14 @@
         extract($_GET);
         include("../controller/user_controller.php");
         $control = new user_controller();
-        $idUser = $_GET['idUser'];
+        $idUser = $_GET['id'];
         $listaUser = $control ->getUser($idUser);
         $listaRol[1]="Administrador";
 		$listaRol[2]="Visitante";
     ?>
     <section class="frmContent">
             <form method="post" action="../controller/user_update.php" class="formulario">
-                <input type="hidden" name="idUser" value="<?php echo $listaUser[0]; ?>">
+                <input type="hidden" name="id" value="<?php echo $listaUser[0]; ?>">
                 <div class="grupoInput">
                     <label for="nombres" class="labelStyle">Nombres</label>
                     <input class="frmInput" type="text" name="nombres" id="nombres" value="<?php echo $listaUser[1]; ?>">

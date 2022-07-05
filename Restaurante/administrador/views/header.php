@@ -38,6 +38,7 @@ include("../seguridad/seguridad.php");
                 <a href="dashboard.php" class="btnMenu">Inicio</a>
                 <a href="" class="btnMenu">Encuesta</a>
                 <a href="user.php" class="btnMenu">Usuarios</a>
+                <a href="dishes.php" class="btnMenu">Platos</a>
                 <a href="" class="btnMenu">Mi perfil</a>
             </nav>
         </section>
