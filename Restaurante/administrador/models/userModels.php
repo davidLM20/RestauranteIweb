@@ -36,7 +36,7 @@ class UserModel
   public function ListUser() {
     $miconexion = new clase_mysqli;
     $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
-    $resSQL=$miconexion->consulta("select id, nombres, apellidos, correo from usuarios");
+    $resSQL=$miconexion->consulta("select id as Identificador, nombres as Nombres, apellidos as Apellidos, correo as Correo from usuarios");
     $resSQL=$miconexion->verconsultacrud('deleteUser.php', 'updateUser.php');
     //$this->Disconnect();
     return $resSQL;

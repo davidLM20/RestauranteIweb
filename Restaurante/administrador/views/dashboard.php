@@ -36,9 +36,8 @@ include("header.php");
 
                 </section>
                 <h2>Nomina</h2>
-                <div class="platoNuevo">
-                    <button class="btnAgragar">Agregar nuevo Chef </button>
-                    <i class="fa-regular fa-plus fa-lg"></i>
+                <div class="add">
+                <div class="add"><a href="user_add.php" class="btnAdd">Agregar Chef<i class="fa-regular fa-plus fa-lg"></i></a></div>
                 </div>
                 <section class="contDash">
                     <article class="chefInfo2">

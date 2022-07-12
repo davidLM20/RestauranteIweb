@@ -3,15 +3,16 @@
 ?>
 
 <section class="contentDash">
-    <h2>Actualizar Plato</h2>
-    <?php
-        extract($_GET);
-        include("../controller/dish_controller.php");
-        $control = new dish_controller();
-        $idDish = $_GET['id'];
-        $listaDish = $control ->getDish($idDish);
-    ?>
-    <section class="frmContent">
+    <section class="contentSection">
+        <h2>Actualizar Plato</h2>
+        <?php
+            extract($_GET);
+            include("../controller/dish_controller.php");
+            $control = new dish_controller();
+            $idDish = $_GET['id'];
+            $listaDish = $control ->getDish($idDish);
+        ?>
+        <section class="frmContent">
             <form method="post" action="../controller/dish_update.php" class="formulario">
                 <input type="hidden" name="id" value="<?php echo $listaDish[0]; ?>">
                 <div class="grupoInput">
@@ -22,14 +23,14 @@
                     <label for="descripcion" class="labelStyle">Descripcion</label>
                     <input class="frmInput" type="text" name="descripcion" id="descripcion" value="<?php echo $listaDish[2]; ?>">
                 </div>
-                <div class="grupoInput">
-                    <button type="summit" value="dish_update" class="btnAddUser">
+                <div class="add">
+                    <button type="summit" value="dish_update" class="btnAdd">
                         Actualizar  
                     </button>
                 </div>
             </form>
 
         </section>
-
+    </section>
     <?php require_once "./footer.php"; ?>
 </section>

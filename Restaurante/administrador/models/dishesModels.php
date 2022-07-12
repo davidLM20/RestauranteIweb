@@ -22,7 +22,7 @@ class DishModel
     public function ListDish() {
         $miconexion = new clase_mysqli;
         $miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
-        $resSQL=$miconexion->consulta("select id, nombrePlato, descripcion from platos");
+        $resSQL=$miconexion->consulta("select id as Identificador, nombrePlato as 'Nombre del Plato', descripcion as 'Descripción' from platos");
         $resSQL=$miconexion->verconsultacrud('deleteDish.php','updateDish.php');
         //$this->Disconnect();
         return $resSQL;

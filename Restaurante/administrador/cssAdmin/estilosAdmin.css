@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    background-color: #f0f0f0;
+}
+/**************/
+.CabeceraPrincipal,.piePagina{
+    width: 100%;
+}
+
+.CabeceraPrincipal{
+    display: flex;
+    background-color: #2D0C58;
+    height: 10vh;
+}
+
+.logo{
+    margin-top: 1.5vh;
+    margin-left: 5vw;
+}
+.contenidoCabecera{
+    display: flex;
+    text-align: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    color: #E0DCDC;
+}
+.contenidoCabecera h1{
+    color: #f0f0f0;
+    padding: 10px 40px;
+}
+.CC2{
+    align-items: flex-end;
+    margin-left: 67vw;
+}
+.usuarioClass{
+    display: flex;
+    margin-bottom: 2vh;
+}
+.Usuario{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/************************************/
+/*Administrador*/
+.administrador{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    height: 90vh;
+}
+.CCUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+}
+.avatar{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50px;
+    margin-left: 1vw;
+}
+
+.usuarioName{
+    font-size: 1.5em;
+}
+
+/***********************************/
+/*SideBar*/
+.sideBar{
+    width: 15%;
+    height: 86vh;
+    background-color: #e5e5e5;
+    padding-left: 3vw;
+    padding-top: 4vh;
+}
+
+.menuSideBar{
+    display: flex;
+    flex-direction: column;
+}
+.btnMenu{ 
+    text-decoration: none;
+    font-size: 1.3em;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    color: #2D0C58;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btnMenu:hover{
+    background-color: #2D0C58;
+    color: #E0DCDC;
+    display: inline-block;
+    border-radius: 5px;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    width: 10vw;
+    height: 4vh;
+}
+
+
+/************************************/
+/*formulario*/
+/*Formulario */
+.principal{
+    display: flex;
+    flex-direction: column;
+    color: #2D0C58;
+    margin-left: 30VW;
+    margin-top: 5vh;   
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    width: 70%;
+}
+.grupoInput{
+    display: flex;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.labelStyle{
+    width: 15%;
+    font-size: 1.2em;
+}
+
+.frmInput{
+    width: 85%;
+    height: 5vh;
+    padding-left: 1vw;
+}
+
+.btn-submit{
+    background-color: #2D0C58;
+    color: #E0DCDC;
+    width: 6vw;
+    height: 5vh;
+    margin-top: 2vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/***********************************/
+/*estadisticas*/
+.estadisticas{
+    display: flex;
+}
+.card{
+    display: flex;
+    width: 10vw;
+    height: 8vh;
+    color: #E0DCDC;
+    margin-right:3vw ;
+    padding-left: 1vw;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.colorCard1{   
+    background-color: #6026ac;
+}
+.colorCard2{   
+    background-color: #26a8ac;
+}
+.colorCard3{   
+    background-color: #d4ce1d;
+}
+.colorCard4{   
+    background-color: #be198c;
+}
+.fa-solid{
+    margin-right: 2VW;
+}
+.numerico{
+    font-size: 1.5em;
+}
+/****************************************/
+/*contenerdor*/
+.contentDash{
+    width: 85%;
+    padding-top: 5vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.contentSection{
+    margin: 4vh 3vw 4vh 3vw;
+    min-height: 70vh;
+}
+.contentDash h2{
+    color: #2D0C58;
+    margin-top: 4vh;
+    font-size: 2em;
+    
+    
+}
+
+.contDash{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/****************************/
+/*Nomina*/
+
+.chefMenu{
+    padding-top: 20vh;
+    width: 70%;
+    color: #2D0C58;
+}
+
+.listaChef{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.chefInfo{
+    display: flex;
+    padding: 2em;
+}
+.chefInfoInt{
+    display: flex;
+    padding-left: 1em;
+    flex-direction: column;
+    text-align: left;
+}
+
+.chefInfoInt h4{
+    padding-bottom: 1em;
+}
+.chefInfoInt p{
+    padding-bottom: 1em;
+}
+.chefInfo img{
+    border-radius: 100%;
+    width: 100%;
+}
+
+.bt1{
+    width: 50%;
+    height: 35px;
+    background-color: #0c5819;
+    color: #E0DCDC;
+}
+.bt2{
+    width: 50%;
+    height: 35px;
+    background-color: #0c2058;
+    color: #E0DCDC;
+}
+/*************************/
+/*contenedor de los botones*/
+.add{
+    margin: 4vh 3vw 4vh 0;
+}
+/***************************/
+/*Botones*/
+.btnAdd{
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 1vh;
+    color: #E0DCDC;
+    background-color: #2D0C58;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.btnExit{
+    text-decoration: none;
+    color: #E0DCDC;
+    font-size: 0.9em;
+    margin-top: 0.8vh;
+    margin-right: 3.5vw;
+}
+
+/*****************************/
+/*tabla*/
+.tableContent{
+    margin: 4vh 3vw 4vh 0;
+    background-color: white;
+}
+
+.tablecud {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+th{
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+}
+td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+}
+
+.titleTable{
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+tr:hover{
+	background: #ccc;
+	color: #000;
+}
+
+
+/**/
+.piePagina{
+    background-color: #2D0C58;
+    color: #E0DCDC;
+}
+.piePagina h6{
+    text-align: center;
+    padding: 2.6em ;
+}
