@@ -36,7 +36,7 @@ include("../seguridad/seguridad.php");
         <section class="sideBar">
             <nav class="menuSideBar">
                 <a href="dashboard.php" class="btnMenu">Inicio</a>
-                <a href="" class="btnMenu">Encuesta</a>
+                <a href="order.php" class="btnMenu">Pedidos</a>
                 <a href="user.php" class="btnMenu">Usuarios</a>
                 <a href="dishes.php" class="btnMenu">Platos</a>
                 <a href="" class="btnMenu">Mi perfil</a>
